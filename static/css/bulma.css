@@ -8328,11 +8328,25 @@ table.dataTable thead .sorting:after, table.dataTable thead .sorting_asc:after, 
     opacity: 0.5;
 }
 
-.card {
+/* .card {
   height: 100%;
-}
+} */
 
 .tabs ul {
     -webkit-flex-direction: column;
     flex-direction: column;
+}
+
+.equal-height {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.card-footer {
+  margin-top: auto;
+}
+
+.hide{
+   display: none;
 }
