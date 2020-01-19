@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" class="has-navbar-fixed-top">
+  <head>
+    {{ partial "header.html" . }}
+    <title>Nepal Data Literacy Program</title>
+    <!-- js -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+  </head>
+
+  <body>
+    <br />
+    {{ partial "navigation.html" . }}
+    {{ partial "feature.html" . }}
+    <br />
+    <hr />
+    {{ partial "project_count.html" . }}
+    <hr />
+    <br />
+    {{ partial "surveys.html" . }}
+    <br />
+    {{ partial "knowledge.html" . }}
+    <br />
+    {{ partial "data.html" . }}
+    <br />
+    {{ partial "capacity.html" . }}
+    {{ partial "footer.html" . }}
+    <script>
+      $(document).ready(function() {
+        $(".slider").bxSlider({
+          auto: true,
+          autoControls: false,
+          controls: false,
+          stopAutoOnClick: true,
+          pager: true
+        });
+      });
+    </script>
+  </body>
+</html>
